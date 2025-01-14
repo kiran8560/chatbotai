@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>kiran_text-to-image</title>
+    <link rel="shortcut icon" href="https://res.cloudinary.com/doov17zaw/image/upload/v1709480236/NK-AI_etrywp.png" title="" type="" />
+    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.20.1/gradio.js"></script>
+    <link rel="stylesheet" href="image.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="none,noarchive" />
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="none,noarchive" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <div class="background d-flex flex-column justify-content-center align-items-center text-center" id="main">
+
+        <div class="pb-5 ">
+            <p class="line-1 anim-typewriter">Welcome to Generative AI </p>
+        </div>
+        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center">
+            <div class="text-center button1 mb-3 mb-md-0 ml-5">
+                <button class="p-2" onclick="display('main5')">Get Started</button>
+            </div>
+
+        </div>
+    </div>
+    <div class="background1 " id="main5">
+        <div onclick="display('main')" class="p-3 d-none d-lg-block">
+            <img class="img0" src="https://ik.imagekit.io/r7gygskpz/project-ai-high-resolution-logo-black.png?updatedAt=1717223427735" />
+        </div>
+        <div class=" d-flex flex-column justify-content-center align-items-center  text-center pt-5">
+            <div class="pb-5 d-lg-none d-sm-block">
+                <p onclick="display('main')" class="line-1 anim-typewriter">home </p>
+            </div>
+            <div class="d-flex flex-row ">
+                <div class="card1 bg-dark " onclick="display('main2')">
+                    <img class="img3" src="https://cdn.dribbble.com/users/6985884/screenshots/15849023/media/6dfb9f3caf75d8b6acc1f9bde6b885fa.gif" />
+                    <div>
+                        <p class="text-white">chatbot</p>
+                    </div>
+                </div>
+                <div class="card1 " onclick="display('main1')">
+                    <img class="img3" src="https://coruzant.com/wp-content/uploads/2022/09/ai-voice-assistant.jpg" />
+                    <div>
+                        <p class="text-white">Voice-to-Voice Chatbot</p>
+                    </div>
+                </div>
+                <div class="card1 bg-white color-white" onclick="display('main3')">
+                    <img class="img3 " src="https://media.licdn.com/dms/image/D4E22AQGqvmMnfte1Yw/feedshare-shrink_2048_1536/0/1694679961771?e=2147483647&v=beta&t=B8SHSGpz2i28mzLsyuCv4T86bJAq6iROMfhF0_ogUzU" />
+                    <div>
+                        <p class="text-white">text-to image</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="main-container back2" id="main2">
+        <div class="description-container">
+            <div class="profile-section">
+                <div class="profile-pic-container">
+                    <div class="profile-pic">
+                        <img class='student-pic' src="https://herobot.app/wp-content/uploads/2022/11/AI-bot-1.jpg" alt="ProfilePic" />
+                    </div>
+                </div>
+
+                <div class="profile-info-container">
+                    <h3 class="name">chatbot</h3>
+                    <p class="bot-extra-info">Youthful | Intelligent & Dynamic AI</p>
+                </div>
+            </div>
+            <div class="project-details-container">
+                <div class="project-heading">
+                    <h1 onclick="display('main5')" class="heading ">Generative AI Project</h1>
+                </div>
+                <div class="project-description">
+                    <p class="description ">Introducing chatbot, your vibrant and clever personal assistant powered by advanced generative AI! At the age of 17, jarvis exudes energy and creativity, always ready to transform your ideas into stunning visuals. Whether you need illustrations, graphics, or any form of visual content, jarvis is dedicated to providing top-notch assistance. With jarvis by your side, you can effortlessly convert your concepts into captivating images, making every project a delightful experience.
+                    </p>
+                </div>
+            </div>
+            <div class="i-have-learnt-section">
+                <p class="i-have-learnt ">what we are use in it: </p>
+                <div class="topics-list">
+                    <div class="topic-icon">
+                        <div>
+                            <a href="https://colab.research.google.com/">
+                                <img title="Google Colab: User-friendly platform for code writing, execution, and sharing. Beloved by AI experts, students, developers, and researchers for data analysis, ML, and AI exploration." class="img1" src="https://colab.research.google.com/img/colab_favicon_256px.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="topic-icon">
+                        <a href="https://platform.openai.com/docs/overview">
+                            <img title="OpenAI: An AI-based chat service powered by Open AI's language model. OpenAI APIs offer access to advanced language models and AI capabilities. Integrate NLP, text generation, and more into your apps to revolutionize communication and problem-solving." class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwBl5CgMuFP51OU_N49Ukp20IR7RayImCwgttcpQwhNg&s" />
+                        </a>
+                    </div>
+                    <div class="topic-icon">
+                        <a href="https://www.gradio.app/playground">
+                            <img title="Gradio: A user-friendly tool that allows to create and share interactive Al Apps without extensive Coding Knowledge." class="img1" src="https://vectorseek.com/wp-content/uploads/2023/12/Gradio-Icon-Logo-Vector.svg-.png" />
+                        </a>
+                    </div>
+                    <div class="topic-icon">
+                        <a href="https://www.langchain.com/">
+                            <img title="LangChain: Seamlessly combine Large Language Models (LLMs) with external computation/data. Build chatbots, analyze data effortlessly. Open source for contributions" class="img1" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2023/07/langchain3.png" />
+                        </a>
+                    </div>
+
+                </div>
+                <div class="about-section"></div>
+            </div>
+            <div class="footer-section footer-desktop">
+                <div class="footer-info">
+                    <span class="heart-beat">❤️</span> Gen AI project
+                </div>
+                <div class="divider-container">
+                    <div class="divider"></div>
+                </div>
+                <div class="share-now">
+                    <p class="footer-info share-now-text">Share on&nbsp;&nbsp;</p>
+                    <div class="icons-container">
+                        <div class="social-icon whatsapp">
+                            <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 24 24" color="var(--token-5b5d5d35-d634-4828-be5e-9e6eeb626953, rgb(148, 163, 184)) /* {&quot;name&quot;:&quot;Text normal&quot;} */" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-5b5d5d35-d634-4828-be5e-9e6eeb626953, rgb(148, 163, 184)); flex-shrink: 0;">
+                                <path d="M16.75 13.96c.25.13.41.2.46.3.06.11.04.61-.21 1.18-.2.56-1.24 1.1-1.7 1.12-.46.02-.47.36-2.96-.73-2.49-1.09-3.99-3.75-4.11-3.92-.12-.17-.96-1.38-.92-2.61.05-1.22.69-1.8.95-2.04.24-.26.51-.29.68-.26h.47c.15 0 .36-.06.55.45l.69 1.87c.06.13.1.28.01.44l-.27.41-.39.42c-.12.12-.26.25-.12.5.12.26.62 1.09 1.32 1.78.91.88 1.71 1.17 1.95 1.3.24.14.39.12.54-.04l.81-.94c.19-.25.35-.19.58-.11l1.67.88M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10c-1.97 0-3.8-.57-5.35-1.55L2 22l1.55-4.65A9.969 9.969 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8c0 1.72.54 3.31 1.46 4.61L4.5 19.5l2.89-.96A7.95 7.95 0 0 0 12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8z"></path>
+                            </svg>
+                        </div>
+                        <div class="social-icon twitter">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.7576 6.7644C21.9876 7.1144 21.1576 7.3444 20.2976 7.4544C21.1776 6.9244 21.8576 6.0844 22.1776 5.0744C21.3476 5.5744 20.4276 5.9244 19.4576 6.1244C18.6676 5.2644 17.5576 4.7644 16.2976 4.7644C13.9476 4.7644 12.0276 6.6844 12.0276 9.0544C12.0276 9.3944 12.0676 9.7244 12.1376 10.0344C8.57765 9.8544 5.40765 8.1444 3.29765 5.5544C2.92765 6.1844 2.71765 6.9244 2.71765 7.7044C2.71765 9.1944 3.46765 10.5144 4.62765 11.2644C3.91765 11.2644 3.25765 11.0644 2.67765 10.7644V10.7944C2.67765 12.8744 4.15765 14.6144 6.11765 15.0044C5.48837 15.1766 4.82774 15.2006 4.18765 15.0744C4.45925 15.9269 4.99118 16.6728 5.70866 17.2073C6.42614 17.7419 7.29309 18.0381 8.18765 18.0544C6.67128 19.2548 4.79164 19.9037 2.85765 19.8944C2.51765 19.8944 2.17765 19.8744 1.83765 19.8344C3.73765 21.0544 5.99765 21.7644 8.41765 21.7644C16.2976 21.7644 20.6276 15.2244 20.6276 9.5544C20.6276 9.3644 20.6276 9.1844 20.6176 8.9944C21.4576 8.3944 22.1776 7.6344 22.7576 6.7644Z" fill="#94A3B8" />
+                            </svg>
+
+                        </div>
+                        <div class="social-icon linkedin">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.2977 3.7644C19.8281 3.7644 20.3368 3.97512 20.7119 4.35019C21.087 4.72526 21.2977 5.23397 21.2977 5.7644V19.7644C21.2977 20.2948 21.087 20.8035 20.7119 21.1786C20.3368 21.5537 19.8281 21.7644 19.2977 21.7644H5.29767C4.76724 21.7644 4.25853 21.5537 3.88345 21.1786C3.50838 20.8035 3.29767 20.2948 3.29767 19.7644V5.7644C3.29767 5.23397 3.50838 4.72526 3.88345 4.35019C4.25853 3.97512 4.76724 3.7644 5.29767 3.7644H19.2977ZM18.7977 19.2644V13.9644C18.7977 13.0998 18.4542 12.2706 17.8428 11.6592C17.2315 11.0479 16.4023 10.7044 15.5377 10.7044C14.6877 10.7044 13.6977 11.2244 13.2177 12.0044V10.8944H10.4277V19.2644H13.2177V14.3344C13.2177 13.5644 13.8377 12.9344 14.6077 12.9344C14.979 12.9344 15.3351 13.0819 15.5976 13.3445C15.8602 13.607 16.0077 13.9631 16.0077 14.3344V19.2644H18.7977ZM7.17767 9.3244C7.62323 9.3244 8.05055 9.14741 8.36561 8.83234C8.68067 8.51728 8.85767 8.08997 8.85767 7.6444C8.85767 6.7144 8.10767 5.9544 7.17767 5.9544C6.72945 5.9544 6.29959 6.13246 5.98266 6.44939C5.66572 6.76633 5.48767 7.19619 5.48767 7.6444C5.48767 8.5744 6.24767 9.3244 7.17767 9.3244ZM8.56767 19.2644V10.8944H5.79767V19.2644H8.56767Z" fill="#94A3B8" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-bot-container">
+            <iframe src="https://vijaykumar8560-vijay.hf.space" frameborder="0" width="550" height="780"></iframe>
+        </div>
+        <div class="footer-section footer-mobile">
+            <div class="footer-info">
+                <span class="heart-beat">❤️</span> Gen AI projet
+            </div>
+            <div class="divider-container">
+                <div class="divider"></div>
+            </div>
+            <div class="share-now">
+                <p class="footer-info share-now-text">Share on&nbsp;</p>
+                <div class="icons-container">
+                    <div class="social-icon whatsapp">
+                        <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 24 24" color="var(--token-5b5d5d35-d634-4828-be5e-9e6eeb626953, rgb(148, 163, 184)) /* {&quot;name&quot;:&quot;Text normal&quot;} */" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-5b5d5d35-d634-4828-be5e-9e6eeb626953, rgb(148, 163, 184)); flex-shrink: 0;">
+                            <path d="M16.75 13.96c.25.13.41.2.46.3.06.11.04.61-.21 1.18-.2.56-1.24 1.1-1.7 1.12-.46.02-.47.36-2.96-.73-2.49-1.09-3.99-3.75-4.11-3.92-.12-.17-.96-1.38-.92-2.61.05-1.22.69-1.8.95-2.04.24-.26.51-.29.68-.26h.47c.15 0 .36-.06.55.45l.69 1.87c.06.13.1.28.01.44l-.27.41-.39.42c-.12.12-.26.25-.12.5.12.26.62 1.09 1.32 1.78.91.88 1.71 1.17 1.95 1.3.24.14.39.12.54-.04l.81-.94c.19-.25.35-.19.58-.11l1.67.88M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10c-1.97 0-3.8-.57-5.35-1.55L2 22l1.55-4.65A9.969 9.969 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8c0 1.72.54 3.31 1.46 4.61L4.5 19.5l2.89-.96A7.95 7.95 0 0 0 12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8z"></path>
+                        </svg>
+                    </div>
+                    <div class="social-icon twitter">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.7576 6.7644C21.9876 7.1144 21.1576 7.3444 20.2976 7.4544C21.1776 6.9244 21.8576 6.0844 22.1776 5.0744C21.3476 5.5744 20.4276 5.9244 19.4576 6.1244C18.6676 5.2644 17.5576 4.7644 16.2976 4.7644C13.9476 4.7644 12.0276 6.6844 12.0276 9.0544C12.0276 9.3944 12.0676 9.7244 12.1376 10.0344C8.57765 9.8544 5.40765 8.1444 3.29765 5.5544C2.92765 6.1844 2.71765 6.9244 2.71765 7.7044C2.71765 9.1944 3.46765 10.5144 4.62765 11.2644C3.91765 11.2644 3.25765 11.0644 2.67765 10.7644V10.7944C2.67765 12.8744 4.15765 14.6144 6.11765 15.0044C5.48837 15.1766 4.82774 15.2006 4.18765 15.0744C4.45925 15.9269 4.99118 16.6728 5.70866 17.2073C6.42614 17.7419 7.29309 18.0381 8.18765 18.0544C6.67128 19.2548 4.79164 19.9037 2.85765 19.8944C2.51765 19.8944 2.17765 19.8744 1.83765 19.8344C3.73765 21.0544 5.99765 21.7644 8.41765 21.7644C16.2976 21.7644 20.6276 15.2244 20.6276 9.5544C20.6276 9.3644 20.6276 9.1844 20.6176 8.9944C21.4576 8.3944 22.1776 7.6344 22.7576 6.7644Z" fill="#94A3B8" />
+                        </svg>
+
+                    </div>
+                    <div class="social-icon linkedin">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.2977 3.7644C19.8281 3.7644 20.3368 3.97512 20.7119 4.35019C21.087 4.72526 21.2977 5.23397 21.2977 5.7644V19.7644C21.2977 20.2948 21.087 20.8035 20.7119 21.1786C20.3368 21.5537 19.8281 21.7644 19.2977 21.7644H5.29767C4.76724 21.7644 4.25853 21.5537 3.88345 21.1786C3.50838 20.8035 3.29767 20.2948 3.29767 19.7644V5.7644C3.29767 5.23397 3.50838 4.72526 3.88345 4.35019C4.25853 3.97512 4.76724 3.7644 5.29767 3.7644H19.2977ZM18.7977 19.2644V13.9644C18.7977 13.0998 18.4542 12.2706 17.8428 11.6592C17.2315 11.0479 16.4023 10.7044 15.5377 10.7044C14.6877 10.7044 13.6977 11.2244 13.2177 12.0044V10.8944H10.4277V19.2644H13.2177V14.3344C13.2177 13.5644 13.8377 12.9344 14.6077 12.9344C14.979 12.9344 15.3351 13.0819 15.5976 13.3445C15.8602 13.607 16.0077 13.9631 16.0077 14.3344V19.2644H18.7977ZM7.17767 9.3244C7.62323 9.3244 8.05055 9.14741 8.36561 8.83234C8.68067 8.51728 8.85767 8.08997 8.85767 7.6444C8.85767 6.7144 8.10767 5.9544 7.17767 5.9544C6.72945 5.9544 6.29959 6.13246 5.98266 6.44939C5.66572 6.76633 5.48767 7.19619 5.48767 7.6444C5.48767 8.5744 6.24767 9.3244 7.17767 9.3244ZM8.56767 19.2644V10.8944H5.79767V19.2644H8.56767Z" fill="#94A3B8" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="main-container back2" id="main3">
+        <div class="description-container">
+            <div class="profile-section">
+                <div class="profile-pic-container">
+                    <div class="profile-pic">
+                        <img class='student-pic' src="https://herobot.app/wp-content/uploads/2022/11/AI-bot-1.jpg" alt="ProfilePic" />
+                    </div>
+                </div>
+                <div class="profile-info-container">
+                    <h3 class="name">AI </h3>
+                    <p class="bot-extra-info">Intelligent & Dynamic AI</p>
+                </div>
+            </div>
+            <div class="project-details-container">
+                <div class="project-heading">
+                    <h1 onclick="display('main5')" class="heading">Generative AI Project</h1>
+                </div>
+                <div class="project-description">
+                    <p class="description">Introducing AI, your vibrant and clever personal assistant powered by advanced generative AI!This AI exudes energy and creativity, always ready to transform your ideas into stunning visuals. Whether you need illustrations, graphics, or any form of visual content,This AI is dedicated to providing top-notch assistance.This AI passion for art and technology ensures that every interaction is engaging and productive. With this AI by your side, you can effortlessly convert your concepts into captivating images, making every project a delightful experience.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="i-have-learnt-section">
+                <p class="i-have-learnt">what we are use in it: </p>
+                <div class="topics-list">
+                    <div class="topic-icon">
+                        <div>
+                            <a href="https://colab.research.google.com/">
+                                <img title="Google Colab: User-friendly platform for code writing, execution, and sharing. Beloved by AI experts, students, developers, and researchers for data analysis, ML, and AI exploration." class="img1" src="https://colab.research.google.com/img/colab_favicon_256px.png" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="topic-icon">
+                        <a href="https://platform.openai.com/docs/overview">
+                            <img title="OpenAI: An AI-based chat service powered by Open AI's language model. OpenAI APIs offer access to advanced language models and AI capabilities. Integrate NLP, text generation, and more into your apps to revolutionize communication and problem-solving." class="img1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwBl5CgMuFP51OU_N49Ukp20IR7RayImCwgttcpQwhNg&s" />
+                        </a>
+                    </div>
+                    <div class="topic-icon">
+                        <a href="https://www.gradio.app/playground">
+                            <img title="Gradio: A user-friendly tool that allows to create and share interactive Al Apps without extensive Coding Knowledge." class="img1" src="https://vectorseek.com/wp-content/uploads/2023/12/Gradio-Icon-Logo-Vector.svg-.png" />
+                        </a>
+                    </div>
+                    <div class="topic-icon">
+                        <a href="https://www.langchain.com/">
+                            <img title="LangChain: Seamlessly combine Large Language Models (LLMs) with external computation/data. Build chatbots, analyze data effortlessly. Open source for contributions" class="img1" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2023/07/langchain3.png" />
+                        </a>
+                    </div>
+
+                </div>
+                <div class="about-section"></div>
+            </div>
+            <div class="footer-section footer-desktop">
+                <div class="footer-info">
+                    <span class="heart-beat">❤️</span> Built during Gen AI workshop
+                </div>
+                <div class="divider-container">
+                    <div class="divider"></div>
+                </div>
+                <div class="share-now">
+                    <p class="footer-info share-now-text">Share on&nbsp;&nbsp;</p>
+                    <div class="icons-container">
+                        <div class="social-icon whatsapp">
+                            <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 24 24" color="var(--token-5b5d5d35-d634-4828-be5e-9e6eeb626953, rgb(148, 163, 184)) /* {&quot;name&quot;:&quot;Text normal&quot;} */" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-5b5d5d35-d634-4828-be5e-9e6eeb626953, rgb(148, 163, 184)); flex-shrink: 0;">
+                                <path d="M16.75 13.96c.25.13.41.2.46.3.06.11.04.61-.21 1.18-.2.56-1.24 1.1-1.7 1.12-.46.02-.47.36-2.96-.73-2.49-1.09-3.99-3.75-4.11-3.92-.12-.17-.96-1.38-.92-2.61.05-1.22.69-1.8.95-2.04.24-.26.51-.29.68-.26h.47c.15 0 .36-.06.55.45l.69 1.87c.06.13.1.28.01.44l-.27.41-.39.42c-.12.12-.26.25-.12.5.12.26.62 1.09 1.32 1.78.91.88 1.71 1.17 1.95 1.3.24.14.39.12.54-.04l.81-.94c.19-.25.35-.19.58-.11l1.67.88M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10c-1.97 0-3.8-.57-5.35-1.55L2 22l1.55-4.65A9.969 9.969 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8c0 1.72.54 3.31 1.46 4.61L4.5 19.5l2.89-.96A7.95 7.95 0 0 0 12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8z"></path>
+                            </svg>
+                        </div>
+                        <div class="social-icon twitter">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.7576 6.7644C21.9876 7.1144 21.1576 7.3444 20.2976 7.4544C21.1776 6.9244 21.8576 6.0844 22.1776 5.0744C21.3476 5.5744 20.4276 5.9244 19.4576 6.1244C18.6676 5.2644 17.5576 4.7644 16.2976 4.7644C13.9476 4.7644 12.0276 6.6844 12.0276 9.0544C12.0276 9.3944 12.0676 9.7244 12.1376 10.0344C8.57765 9.8544 5.40765 8.1444 3.29765 5.5544C2.92765 6.1844 2.71765 6.9244 2.71765 7.7044C2.71765 9.1944 3.46765 10.5144 4.62765 11.2644C3.91765 11.2644 3.25765 11.0644 2.67765 10.7644V10.7944C2.67765 12.8744 4.15765 14.6144 6.11765 15.0044C5.48837 15.1766 4.82774 15.2006 4.18765 15.0744C4.45925 15.9269 4.99118 16.6728 5.70866 17.2073C6.42614 17.7419 7.29309 18.0381 8.18765 18.0544C6.67128 19.2548 4.79164 19.9037 2.85765 19.8944C2.51765 19.8944 2.17765 19.8744 1.83765 19.8344C3.73765 21.0544 5.99765 21.7644 8.41765 21.7644C16.2976 21.7644 20.6276 15.2244 20.6276 9.5544C20.6276 9.3644 20.6276 9.1844 20.6176 8.9944C21.4576 8.3944 22.1776 7.6344 22.7576 6.7644Z" fill="#94A3B8" />
+                            </svg>
+
+                        </div>
+                        <div class="social-icon linkedin">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.2977 3.7644C19.8281 3.7644 20.3368 3.97512 20.7119 4.35019C21.087 4.72526 21.2977 5.23397 21.2977 5.7644V19.7644C21.2977 20.2948 21.087 20.8035 20.7119 21.1786C20.3368 21.5537 19.8281 21.7644 19.2977 21.7644H5.29767C4.76724 21.7644 4.25853 21.5537 3.88345 21.1786C3.50838 20.8035 3.29767 20.2948 3.29767 19.7644V5.7644C3.29767 5.23397 3.50838 4.72526 3.88345 4.35019C4.25853 3.97512 4.76724 3.7644 5.29767 3.7644H19.2977ZM18.7977 19.2644V13.9644C18.7977 13.0998 18.4542 12.2706 17.8428 11.6592C17.2315 11.0479 16.4023 10.7044 15.5377 10.7044C14.6877 10.7044 13.6977 11.2244 13.2177 12.0044V10.8944H10.4277V19.2644H13.2177V14.3344C13.2177 13.5644 13.8377 12.9344 14.6077 12.9344C14.979 12.9344 15.3351 13.0819 15.5976 13.3445C15.8602 13.607 16.0077 13.9631 16.0077 14.3344V19.2644H18.7977ZM7.17767 9.3244C7.62323 9.3244 8.05055 9.14741 8.36561 8.83234C8.68067 8.51728 8.85767 8.08997 8.85767 7.6444C8.85767 6.7144 8.10767 5.9544 7.17767 5.9544C6.72945 5.9544 6.29959 6.13246 5.98266 6.44939C5.66572 6.76633 5.48767 7.19619 5.48767 7.6444C5.48767 8.5744 6.24767 9.3244 7.17767 9.3244ZM8.56767 19.2644V10.8944H5.79767V19.2644H8.56767Z" fill="#94A3B8" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-bot-container">
+            <iframe src="https://adople-text-to-image.hf.space" frameborder="0" width="540" height="780"></iframe>
+        </div>
+        <div class="footer-section footer-mobile">
+            <div class="footer-info">
+                <span class="heart-beat">❤️</span> Built during Gen AI workshop
+            </div>
+            <div class="divider-container">
+                <div class="divider"></div>
+            </div>
+            <div class="share-now">
+                <p class="footer-info share-now-text">Share on&nbsp;</p>
+                <div class="icons-container">
+                    <div class="social-icon whatsapp">
+                        <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 24 24" color="var(--token-5b5d5d35-d634-4828-be5e-9e6eeb626953, rgb(148, 163, 184)) /* {&quot;name&quot;:&quot;Text normal&quot;} */" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-5b5d5d35-d634-4828-be5e-9e6eeb626953, rgb(148, 163, 184)); flex-shrink: 0;">
+                            <path d="M16.75 13.96c.25.13.41.2.46.3.06.11.04.61-.21 1.18-.2.56-1.24 1.1-1.7 1.12-.46.02-.47.36-2.96-.73-2.49-1.09-3.99-3.75-4.11-3.92-.12-.17-.96-1.38-.92-2.61.05-1.22.69-1.8.95-2.04.24-.26.51-.29.68-.26h.47c.15 0 .36-.06.55.45l.69 1.87c.06.13.1.28.01.44l-.27.41-.39.42c-.12.12-.26.25-.12.5.12.26.62 1.09 1.32 1.78.91.88 1.71 1.17 1.95 1.3.24.14.39.12.54-.04l.81-.94c.19-.25.35-.19.58-.11l1.67.88M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10c-1.97 0-3.8-.57-5.35-1.55L2 22l1.55-4.65A9.969 9.969 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8c0 1.72.54 3.31 1.46 4.61L4.5 19.5l2.89-.96A7.95 7.95 0 0 0 12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8z"></path>
+                        </svg>
+                    </div>
+                    <div class="social-icon twitter">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.7576 6.7644C21.9876 7.1144 21.1576 7.3444 20.2976 7.4544C21.1776 6.9244 21.8576 6.0844 22.1776 5.0744C21.3476 5.5744 20.4276 5.9244 19.4576 6.1244C18.6676 5.2644 17.5576 4.7644 16.2976 4.7644C13.9476 4.7644 12.0276 6.6844 12.0276 9.0544C12.0276 9.3944 12.0676 9.7244 12.1376 10.0344C8.57765 9.8544 5.40765 8.1444 3.29765 5.5544C2.92765 6.1844 2.71765 6.9244 2.71765 7.7044C2.71765 9.1944 3.46765 10.5144 4.62765 11.2644C3.91765 11.2644 3.25765 11.0644 2.67765 10.7644V10.7944C2.67765 12.8744 4.15765 14.6144 6.11765 15.0044C5.48837 15.1766 4.82774 15.2006 4.18765 15.0744C4.45925 15.9269 4.99118 16.6728 5.70866 17.2073C6.42614 17.7419 7.29309 18.0381 8.18765 18.0544C6.67128 19.2548 4.79164 19.9037 2.85765 19.8944C2.51765 19.8944 2.17765 19.8744 1.83765 19.8344C3.73765 21.0544 5.99765 21.7644 8.41765 21.7644C16.2976 21.7644 20.6276 15.2244 20.6276 9.5544C20.6276 9.3644 20.6276 9.1844 20.6176 8.9944C21.4576 8.3944 22.1776 7.6344 22.7576 6.7644Z" fill="#94A3B8" />
+                        </svg>
+
+                    </div>
+                    <div class="social-icon linkedin">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.2977 3.7644C19.8281 3.7644 20.3368 3.97512 20.7119 4.35019C21.087 4.72526 21.2977 5.23397 21.2977 5.7644V19.7644C21.2977 20.2948 21.087 20.8035 20.7119 21.1786C20.3368 21.5537 19.8281 21.7644 19.2977 21.7644H5.29767C4.76724 21.7644 4.25853 21.5537 3.88345 21.1786C3.50838 20.8035 3.29767 20.2948 3.29767 19.7644V5.7644C3.29767 5.23397 3.50838 4.72526 3.88345 4.35019C4.25853 3.97512 4.76724 3.7644 5.29767 3.7644H19.2977ZM18.7977 19.2644V13.9644C18.7977 13.0998 18.4542 12.2706 17.8428 11.6592C17.2315 11.0479 16.4023 10.7044 15.5377 10.7044C14.6877 10.7044 13.6977 11.2244 13.2177 12.0044V10.8944H10.4277V19.2644H13.2177V14.3344C13.2177 13.5644 13.8377 12.9344 14.6077 12.9344C14.979 12.9344 15.3351 13.0819 15.5976 13.3445C15.8602 13.607 16.0077 13.9631 16.0077 14.3344V19.2644H18.7977ZM7.17767 9.3244C7.62323 9.3244 8.05055 9.14741 8.36561 8.83234C8.68067 8.51728 8.85767 8.08997 8.85767 7.6444C8.85767 6.7144 8.10767 5.9544 7.17767 5.9544C6.72945 5.9544 6.29959 6.13246 5.98266 6.44939C5.66572 6.76633 5.48767 7.19619 5.48767 7.6444C5.48767 8.5744 6.24767 9.3244 7.17767 9.3244ZM8.56767 19.2644V10.8944H5.79767V19.2644H8.56767Z" fill="#94A3B8" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-container back2" id="main1">
+        <div class="description-container">
+            <div class="profile-section">
+                <div class="profile-pic-container">
+                    <div class="profile-pic">
+                        <img class='student-pic' onclick="display('main')" src="https://herobot.app/wp-content/uploads/2022/11/AI-bot-1.jpg" alt="ProfilePic" />
+                    </div>
+                </div>
+                <div class="profile-info-container">
+                    <h3 class="name">Voice-to-Voice Chatbot</h3>
+                    <p class="bot-extra-info"> Youthful | Intelligent & Dynamic AI</p>
+                </div>
+            </div>
+            <div class="project-details-container">
+                <div class="project-heading">
+                    <h1 onclick="display('main5')" class="heading">Generative AI Project</h1>
+                </div>
+                <div class="project-description">
+                    <p class="description">Introducing jarvis, your vibrant and clever personal assistant powered by advanced generative AI! At the age of 17, jarvis exudes energy and creativity, always ready to transform your ideas into stunning visuals. Whether you need illustrations, graphics, or any form of visual content, jarvis is dedicated to providing top-notch assistance. With jarvis by your side, you can effortlessly convert your concepts into captivating images, making every project a delightful experience.
+                    </p>
+                </div>
+            </div>
+            <div class="i-have-learnt-section">
+                <p class="i-have-learnt">what we are use in it: </p>
+                <div class="topics-list">
+                    <div class="topic-icon">
+                        <div>
+                            <a href="https://colab.research.google.com/">
+                                <img class="img1" title="Google Colab: User-friendly platform for code writing, execution, and sharing. Beloved by AI experts, students, developers, and researchers for data analysis, ML, and AI exploration." src="https://colab.research.google.com/img/colab_favicon_256px.png" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="topic-icon">
+                        <a href="https://platform.openai.com/docs/overview">
+                            <img class="img1" title="OpenAI: An AI-based chat service powered by Open AI's language model. OpenAI APIs offer access to advanced language models and AI capabilities. Integrate NLP, text generation, and more into your apps to revolutionize communication and problem-solving." src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwBl5CgMuFP51OU_N49Ukp20IR7RayImCwgttcpQwhNg&s" />
+                        </a>
+                    </div>
+                    <div class="topic-icon">
+                        <a href="https://www.gradio.app/playground">
+                            <img title="Gradio: A user-friendly tool that allows to create and share interactive Al Apps without extensive Coding Knowledge." class="img1" src="https://vectorseek.com/wp-content/uploads/2023/12/Gradio-Icon-Logo-Vector.svg-.png" />
+                        </a>
+                    </div>
+                    <div class="topic-icon">
+                        <a href="https://www.langchain.com/">
+                            <img title="LangChain: Seamlessly combine Large Language Models (LLMs) with external computation/data. Build chatbots, analyze data effortlessly. Open source for contributions" class="img1" src="https://cdn.analyticsvidhya.com/wp-content/uploads/2023/07/langchain3.png" />
+                        </a>
+                    </div>
+                </div>
+                <div class="about-section"></div>
+            </div>
+            <div class="footer-section footer-desktop">
+                <div class="footer-info">
+                    <span class="heart-beat">❤️</span>Gen AI project
+                </div>
+                <div class="divider-container">
+                    <div class="divider"></div>
+                </div>
+                <div class="share-now">
+                    <p class="footer-info share-now-text">Share on</p>
+                    <div class="icons-container">
+                        <div class="social-icon whatsapp">
+                            <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 24 24" color="var(--token-5b5d5d35-d634-4828-be5e-9e6eeb626953, rgb(148, 163, 184)) /* {&quot;name&quot;:&quot;Text normal&quot;} */" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-5b5d5d35-d634-4828-be5e-9e6eeb626953, rgb(148, 163, 184)); flex-shrink: 0;">
+                                <path d="M16.75 13.96c.25.13.41.2.46.3.06.11.04.61-.21 1.18-.2.56-1.24 1.1-1.7 1.12-.46.02-.47.36-2.96-.73-2.49-1.09-3.99-3.75-4.11-3.92-.12-.17-.96-1.38-.92-2.61.05-1.22.69-1.8.95-2.04.24-.26.51-.29.68-.26h.47c.15 0 .36-.06.55.45l.69 1.87c.06.13.1.28.01.44l-.27.41-.39.42c-.12.12-.26.25-.12.5.12.26.62 1.09 1.32 1.78.91.88 1.71 1.17 1.95 1.3.24.14.39.12.54-.04l.81-.94c.19-.25.35-.19.58-.11l1.67.88M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10c-1.97 0-3.8-.57-5.35-1.55L2 22l1.55-4.65A9.969 9.969 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8c0 1.72.54 3.31 1.46 4.61L4.5 19.5l2.89-.96A7.95 7.95 0 0 0 12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8z"></path>
+                            </svg>
+                        </div>
+                        <div class="social-icon twitter">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M22.7576 6.7644C21.9876 7.1144 21.1576 7.3444 20.2976 7.4544C21.1776 6.9244 21.8576 6.0844 22.1776 5.0744C21.3476 5.5744 20.4276 5.9244 19.4576 6.1244C18.6676 5.2644 17.5576 4.7644 16.2976 4.7644C13.9476 4.7644 12.0276 6.6844 12.0276 9.0544C12.0276 9.3944 12.0676 9.7244 12.1376 10.0344C8.57765 9.8544 5.40765 8.1444 3.29765 5.5544C2.92765 6.1844 2.71765 6.9244 2.71765 7.7044C2.71765 9.1944 3.46765 10.5144 4.62765 11.2644C3.91765 11.2644 3.25765 11.0644 2.67765 10.7644V10.7944C2.67765 12.8744 4.15765 14.6144 6.11765 15.0044C5.48837 15.1766 4.82774 15.2006 4.18765 15.0744C4.45925 15.9269 4.99118 16.6728 5.70866 17.2073C6.42614 17.7419 7.29309 18.0381 8.18765 18.0544C6.67128 19.2548 4.79164 19.9037 2.85765 19.8944C2.51765 19.8944 2.17765 19.8744 1.83765 19.8344C3.73765 21.0544 5.99765 21.7644 8.41765 21.7644C16.2976 21.7644 20.6276 15.2244 20.6276 9.5544C20.6276 9.3644 20.6276 9.1844 20.6176 8.9944C21.4576 8.3944 22.1776 7.6344 22.7576 6.7644Z" fill="#94A3B8" />
+                            </svg>
+                        </div>
+                        <div class="social-icon linkedin">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.2977 3.7644C19.8281 3.7644 20.3368 3.97512 20.7119 4.35019C21.087 4.72526 21.2977 5.23397 21.2977 5.7644V19.7644C21.2977 20.2948 21.087 20.8035 20.7119 21.1786C20.3368 21.5537 19.8281 21.7644 19.2977 21.7644H5.29767C4.76724 21.7644 4.25853 21.5537 3.88345 21.1786C3.50838 20.8035 3.29767 20.2948 3.29767 19.7644V5.7644C3.29767 5.23397 3.50838 4.72526 3.88345 4.35019C4.25853 3.97512 4.76724 3.7644 5.29767 3.7644H19.2977ZM18.7977 19.2644V13.9644C18.7977 13.0998 18.4542 12.2706 17.8428 11.6592C17.2315 11.0479 16.4023 10.7044 15.5377 10.7044C14.6877 10.7044 13.6977 11.2244 13.2177 12.0044V10.8944H10.4277V19.2644H13.2177V14.3344C13.2177 13.5644 13.8377 12.9344 14.6077 12.9344C14.979 12.9344 15.3351 13.0819 15.5976 13.3445C15.8602 13.607 16.0077 13.9631 16.0077 14.3344V19.2644H18.7977ZM7.17767 9.3244C7.62323 9.3244 8.05055 9.14741 8.36561 8.83234C8.68067 8.51728 8.85767 8.08997 8.85767 7.6444C8.85767 6.7144 8.10767 5.9544 7.17767 5.9544C6.72945 5.9544 6.29959 6.13246 5.98266 6.44939C5.66572 6.76633 5.48767 7.19619 5.48767 7.6444C5.48767 8.5744 6.24767 9.3244 7.17767 9.3244ZM8.56767 19.2644V10.8944H5.79767V19.2644H8.56767Z" fill="#94A3B8" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-bot-container">
+            <iframe src="https://engr-saeed-voicetovoicechatbot.hf.space" frameborder="0" width="550" height="780"></iframe>
+
+        </div>
+        <div class="footer-section footer-mobile">
+            <div class="footer-info">
+                <span class="heart-beat">❤️</span> Gen AI project
+            </div>
+            <div class="divider-container">
+                <div class="divider"></div>
+            </div>
+            <div class="share-now">
+                <p class="footer-info share-now-text">Share on&nbsp;</p>
+                <div class="icons-container">
+                    <div class="social-icon whatsapp">
+                        <svg width="25" height="25" xmlns="http://www.w3.org/2000/svg" focusable="false" viewBox="0 0 24 24" color="var(--token-5b5d5d35-d634-4828-be5e-9e6eeb626953, rgb(148, 163, 184)) /* {&quot;name&quot;:&quot;Text normal&quot;} */" style="user-select: none; width: 100%; height: 100%; display: inline-block; fill: var(--token-5b5d5d35-d634-4828-be5e-9e6eeb626953, rgb(148, 163, 184)); flex-shrink: 0;">
+                            <path d="M16.75 13.96c.25.13.41.2.46.3.06.11.04.61-.21 1.18-.2.56-1.24 1.1-1.7 1.12-.46.02-.47.36-2.96-.73-2.49-1.09-3.99-3.75-4.11-3.92-.12-.17-.96-1.38-.92-2.61.05-1.22.69-1.8.95-2.04.24-.26.51-.29.68-.26h.47c.15 0 .36-.06.55.45l.69 1.87c.06.13.1.28.01.44l-.27.41-.39.42c-.12.12-.26.25-.12.5.12.26.62 1.09 1.32 1.78.91.88 1.71 1.17 1.95 1.3.24.14.39.12.54-.04l.81-.94c.19-.25.35-.19.58-.11l1.67.88M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10c-1.97 0-3.8-.57-5.35-1.55L2 22l1.55-4.65A9.969 9.969 0 0 1 2 12 10 10 0 0 1 12 2m0 2a8 8 0 0 0-8 8c0 1.72.54 3.31 1.46 4.61L4.5 19.5l2.89-.96A7.95 7.95 0 0 0 12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8z"></path>
+                        </svg>
+                    </div>
+                    <div class="social-icon twitter">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.7576 6.7644C21.9876 7.1144 21.1576 7.3444 20.2976 7.4544C21.1776 6.9244 21.8576 6.0844 22.1776 5.0744C21.3476 5.5744 20.4276 5.9244 19.4576 6.1244C18.6676 5.2644 17.5576 4.7644 16.2976 4.7644C13.9476 4.7644 12.0276 6.6844 12.0276 9.0544C12.0276 9.3944 12.0676 9.7244 12.1376 10.0344C8.57765 9.8544 5.40765 8.1444 3.29765 5.5544C2.92765 6.1844 2.71765 6.9244 2.71765 7.7044C2.71765 9.1944 3.46765 10.5144 4.62765 11.2644C3.91765 11.2644 3.25765 11.0644 2.67765 10.7644V10.7944C2.67765 12.8744 4.15765 14.6144 6.11765 15.0044C5.48837 15.1766 4.82774 15.2006 4.18765 15.0744C4.45925 15.9269 4.99118 16.6728 5.70866 17.2073C6.42614 17.7419 7.29309 18.0381 8.18765 18.0544C6.67128 19.2548 4.79164 19.9037 2.85765 19.8944C2.51765 19.8944 2.17765 19.8744 1.83765 19.8344C3.73765 21.0544 5.99765 21.7644 8.41765 21.7644C16.2976 21.7644 20.6276 15.2244 20.6276 9.5544C20.6276 9.3644 20.6276 9.1844 20.6176 8.9944C21.4576 8.3944 22.1776 7.6344 22.7576 6.7644Z" fill="#94A3B8" />
+                        </svg>
+                    </div>
+                    <div class="social-icon linkedin">
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.2977 3.7644C19.8281 3.7644 20.3368 3.97512 20.7119 4.35019C21.087 4.72526 21.2977 5.23397 21.2977 5.7644V19.7644C21.2977 20.2948 21.087 20.8035 20.7119 21.1786C20.3368 21.5537 19.8281 21.7644 19.2977 21.7644H5.29767C4.76724 21.7644 4.25853 21.5537 3.88345 21.1786C3.50838 20.8035 3.29767 20.2948 3.29767 19.7644V5.7644C3.29767 5.23397 3.50838 4.72526 3.88345 4.35019C4.25853 3.97512 4.76724 3.7644 5.29767 3.7644H19.2977ZM18.7977 19.2644V13.9644C18.7977 13.0998 18.4542 12.2706 17.8428 11.6592C17.2315 11.0479 16.4023 10.7044 15.5377 10.7044C14.6877 10.7044 13.6977 11.2244 13.2177 12.0044V10.8944H10.4277V19.2644H13.2177V14.3344C13.2177 13.5644 13.8377 12.9344 14.6077 12.9344C14.979 12.9344 15.3351 13.0819 15.5976 13.3445C15.8602 13.607 16.0077 13.9631 16.0077 14.3344V19.2644H18.7977ZM7.17767 9.3244C7.62323 9.3244 8.05055 9.14741 8.36561 8.83234C8.68067 8.51728 8.85767 8.08997 8.85767 7.6444C8.85767 6.7144 8.10767 5.9544 7.17767 5.9544C6.72945 5.9544 6.29959 6.13246 5.98266 6.44939C5.66572 6.76633 5.48767 7.19619 5.48767 7.6444C5.48767 8.5744 6.24767 9.3244 7.17767 9.3244ZM8.56767 19.2644V10.8944H5.79767V19.2644H8.56767Z" fill="#94A3B8" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+
+
+</body>
+
+</html>
