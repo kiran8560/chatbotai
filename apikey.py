@@ -1,1 +1,1 @@
-api_data = 'YourAPIKEY' 
+api_data = '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' 
